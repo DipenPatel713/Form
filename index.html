@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form of personnel details</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        form{
+            text-align: center;
+        }
+        #button{
+            border: 3px solid black;
+            border-radius: 5px;
+            color: brown;
+            background-color: beige;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        
+        First name:
+        <input type="text" name="fname"><br/>
+        <br/>
+        Last name:
+        <input type="text" name="lname">
+        <br/>
+        <br/>
+        Password: <input type="password">
+        <br/><br/>
+        E-mail : <input type="email" name="email">
+        <br/><br/>
+        Gender: 
+        <input type="radio" name="gender" checked>Male
+        <input type="radio" name="gender">Female
+        <br><br>
+        Hobby:
+        <input type="checkbox" name="hobby[]">Sports
+        <input type="checkbox" name="hobby[]">Music
+        <input type="checkbox" name="hobby[]">Dance
+        <input type="checkbox" name="hobby[]">Reading
+        <br/><br/>
+        Qualification:
+        <select name="qual">
+            <option value="12">12th</option>
+            <option value="10">10th</option>
+            <option value="graduate">Graduate</option>
+        </select>
+        <br/><br/>
+        Address: 
+        <textarea name="address" cols="30" rows="10"></textarea>
+        <br/><br/>
+        Date:
+        <input type="date" name="date">
+        <br/><br/>
+        <input type="submit" value="Submit" id="button">
+        <input type="reset" value="reset" id="button">
+
+    </form>
+</body>
+</html>
